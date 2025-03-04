@@ -1,0 +1,22 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "images"
+public_folder: "/images"
+
+collections:
+  - name: "tai-san"
+    label: "Tài sản"
+    folder: "products"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Tên tài sản", name: "title", widget: "string" }
+      - { label: "Nhóm tài sản", name: "assetGroup", widget: "string" }
+      - { label: "Mã tài sản", name: "assetCode", widget: "string" }
+      - { label: "Thời gian sử dụng", name: "usageTime", widget: "string" }
+      - { label: "Đơn vị sử dụng", name: "usageUnit", widget: "string" }
+      - { label: "Người sử dụng", name: "user", widget: "string" }
+      - { label: "Mô tả", name: "description", widget: "text" }
+
